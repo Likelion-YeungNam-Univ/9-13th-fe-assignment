@@ -13,7 +13,7 @@ const Projects = () => {
       <h1 className=" p-4 text-center text-6xl font-bold mb-12 bg-gray-300">
         📋프로젝트 목록
       </h1>
-      <ul className="grid grid-cols-2 p-12 space-y-6 text-3xl font-bold">
+      <ul className="grid grid-cols-2 p-12 space-y-35 text-3xl font-bold">
         {projects.map((project) => (
           <li key={project.id}>
             <button
