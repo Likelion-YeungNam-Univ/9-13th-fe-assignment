@@ -19,11 +19,21 @@ export const project = [
   },
   {
     id: 4,
-    title: "likelion-5",
+    title: "likelion-4",
     language: "JavaScript",
-    last_update: "2 weeks",
+    last_update: "Apr 11",
   },
-  { id: 5, title: "likelion-4", language: "JavaScript", last_update: "Apr 11" },
-  { id: 6, title: "likelion-2", language: "HTML", last_update: "Apr 4" },
-  { id: 7, title: "likelion-1", language: "HTML", last_update: "Apr 2" },
+
+  { id: 5, title: "likelion-2", language: "HTML", last_update: "Apr 4" },
+  {
+    id: 6,
+    title: "likelion-1",
+    language: "HTML",
+    last_update: "Apr 2",
+  },
+  {
+    id: 7,
+    title: "13th-github-session",
+    last_update: "Mar 29",
+  },
 ];

@@ -22,11 +22,11 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           {/* index routes를 통해 /Home 경로를 기본 경로로 설정 */}
+          <Route path="about" element={<About />} />
           <Route path="projects" element={<Project />} />
           <Route path="projects/:id" element={<ProjectDetail />} />
-          <Route path="about" element={<About />} />
         </Route>
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFound />} /> {/* 404 페이지 */}
       </Routes>
     </BrowserRouter>
   );
