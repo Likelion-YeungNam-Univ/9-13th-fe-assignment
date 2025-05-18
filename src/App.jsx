@@ -1,5 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import ProjectDetail from "./pages/ProjectDetail";
+import NotFound from "./pages/NotFound";
+import LayOut from "./LayOut";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
@@ -14,7 +19,15 @@ function App() {
     // 멋사 노션 페이지의 조건 사항 꼭 확인해주시고 다 만족시켜서 과제 해주세요.
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/" element={<LayOut />}>
+          <Route path="" element={<Home />} />
+
+          <Route path="/home" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/about" element={<About />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
