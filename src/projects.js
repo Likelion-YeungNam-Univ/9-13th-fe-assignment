@@ -69,5 +69,12 @@ export const projects = [
     subtitle: "미니 포트폴리오 웹사이트 만들기",
     githubUrl:
       "https://github.com/Likelion-YeungNam-Univ/9-13th-fe-assignment/tree/feature/limtaehyeon",
+    images: [
+      "/images/image-hw9_1.png",
+      "/images/image-hw9_2.png",
+      "/images/image-hw9_3.png",
+      "/images/image-hw9_4.png",
+      "/images/image-hw9_5.png",
+    ],
   },
 ];
