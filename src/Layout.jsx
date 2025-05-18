@@ -19,7 +19,7 @@ export default function Layout() {
     },
   ];
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen ">
       <nav className="bg-black w-80 flex justify-center">
         <div className="flex flex-col w-4/5 space-y-20  py-10">
           {navItems.map((item) => (
@@ -33,7 +33,7 @@ export default function Layout() {
           ))}
         </div>
       </nav>
-      <div className="flex-grow overflow-y-auto bg-white p-10">
+      <div className="flex-grow overflow-y-auto bg-white p-10 flex justify-center">
         <Outlet />
       </div>
     </div>

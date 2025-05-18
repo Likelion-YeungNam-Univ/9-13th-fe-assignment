@@ -3,7 +3,7 @@ import helloImg from "../assets/hello.png";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-10 space-y-4 mt-20">
+    <div className="flex flex-col items-center justify-center text-center p-10 space-y-4">
       <img
         src={helloImg}
         alt="hello"
