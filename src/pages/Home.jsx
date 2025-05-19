@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <div className="p-5 text-2xl font-bold flex justify-center">
+      김민정의 포트폴리오 🐹
+    </div>
+  );
+};
 
-export default Home
+export default Home;
