@@ -23,19 +23,19 @@ const ProjectsDetail = () => {
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 text-xl hover:underline"
+          className="text-blue-600 text-xl font-semibold hover:underline"
         >
           github
         </a>
         <div
           onClick={() => navigate("/projects")}
-          className="bg-gray-200 border rounded-xl p-1 hover:bg-yellow-200"
+          className="bg-gray-200 border rounded-xl px-2 py-1 hover:bg-yellow-200"
         >
           목록으로
         </div>
       </div>
       <div className="text-xl p-4">과제 설명: {project.description}</div>
-      <img src={project.thumbnail} className="scale-75" />
+      <img src={project.thumbnail} className="mb-4" />
     </div>
   );
 };

@@ -8,7 +8,7 @@ const Projects = () => {
       <Link
         key={project.id}
         to={`/projects/${project.id}`}
-        className="flex flex-col h-full p-3 border rounded-2xl hover:border-blue-600 hover:scale-105 hover:border-2"
+        className="flex flex-col h-full p-3 border rounded-2xl hover:border-blue-600 hover:scale-105 hover:border-2 hover:shadow-xl"
       >
         <img
           className="rounded-2xl w-full h-full object-cover"
