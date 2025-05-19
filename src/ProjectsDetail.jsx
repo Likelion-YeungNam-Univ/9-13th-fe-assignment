@@ -28,7 +28,7 @@ const ProjectsDetail = () => {
           github
         </a>
         <div
-          onClick={() => navigate(-1)}
+          onClick={() => navigate("/projects")}
           className="bg-gray-200 border rounded-xl p-1 hover:bg-yellow-200"
         >
           목록으로
