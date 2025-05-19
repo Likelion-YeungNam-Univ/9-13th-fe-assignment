@@ -35,7 +35,7 @@ export const projects = [
     program: "MIDAS GROUP",
     period: "2024-09-12 ~ 2024-11-22",
     contents:
-      "연도별 패션 스타일 이미지 및 추천 데이터를 바탕으로 패션 스타일 선호 여부를 예측하는 모델 개발",
+      "연도별 패션 스타일 이미지 및 추천 데이터를 바탕으로 패션 스타일 선호 여부를 예측하는 인공지능 모델 개발",
     image: [project3Img1, project3Img2, project3Img3, project3Img4],
   },
 ];
