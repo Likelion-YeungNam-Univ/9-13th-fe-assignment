@@ -33,7 +33,7 @@ export default function Layout() {
           ))}
         </div>
       </nav>
-      <div className="flex-grow overflow-y-auto bg-white p-10 flex justify-center">
+      <div className="flex-grow overflow-y-auto p-10 flex justify-center">
         <Outlet />
       </div>
     </div>

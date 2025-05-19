@@ -17,7 +17,7 @@ export default function Projects() {
         {projects.map((p) => (
           <Link
             to={`/projects/${p.id}`}
-            state={p.title}
+            state={{ title: p.title }}
             className="border-none rounded-lg w-96 h-64"
           >
             <div className="h-full flex flex-col">
