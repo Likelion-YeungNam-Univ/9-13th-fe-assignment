@@ -5,10 +5,12 @@ import { Link } from "react-router-dom";
 const Project = () => {
   return (
     <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">프로젝트</h1>
+      <h1 className="text-2xl font-bold mb-4 flex justify-center">
+        멋사 프로젝트
+      </h1>
       <ul className="space-y-2">
         {projects.map((project) => (
-          <li key={project.id}>
+          <li key={project.id} className="flex justify-center">
             <Link to={`/project/${project.id}`}>{project.title}</Link>
           </li>
         ))}

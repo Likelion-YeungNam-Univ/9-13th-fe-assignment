@@ -1,4 +1,8 @@
 export const projects = [
-  { id: 1, title: "프로젝트 목록" },
-  { id: 2, title: "자기소개" },
+  { id: 1, title: "HTML&CSS" },
+  { id: 2, title: "반응형 웹" },
+  { id: 3, title: "JS" },
+  { id: 4, title: "React" },
+  { id: 5, title: "useState" },
+  { id: 6, title: "useEffect" },
 ];
