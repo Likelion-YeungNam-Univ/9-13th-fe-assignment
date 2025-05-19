@@ -2,11 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const linkStyle = "p-7 hover:text-white";
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/projects">프로젝트</Link>
-      <Link to="/about">자기소개</Link>
+    <nav className="p-4 bg-blue-950 text-gray-300 font-semibold">
+      <Link to="/" className={linkStyle}>
+        Home
+      </Link>
+      <Link to="/projects" className={linkStyle}>
+        Projects
+      </Link>
+      <Link to="/about" className={linkStyle}>
+        Introduction
+      </Link>
     </nav>
   );
 };
