@@ -17,7 +17,7 @@ const ProjectsDetail = () => {
 
   return (
     <div className="flex flex-col justify-center items-center">
-      <h1 className="text-2xl font-bold p-3">{project.title}</h1>
+      <h1 className="text-3xl font-bold p-3">{project.title}</h1>
       <div className="flex space-x-2">
         <a
           href={project.link}
@@ -34,6 +34,7 @@ const ProjectsDetail = () => {
           목록으로
         </div>
       </div>
+      <div className="text-xl p-4">과제 설명: {project.description}</div>
       <img src={project.thumbnail} className="scale-75" />
     </div>
   );

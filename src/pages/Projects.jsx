@@ -24,7 +24,7 @@ const Projects = () => {
 
   return (
     <div className="h-screen flex flex-col overflow-hidden p-4">
-      <h1 className="text-center text-2xl font-bold mb-4">프로젝트 목록</h1>
+      <h1 className="text-center text-3xl font-bold m-4">프로젝트 목록</h1>
       <div className="flex-1 overflow-y-auto p-3">
         <div className="grid grid-cols-4 gap-4 my-2">{printBox()}</div>
       </div>
