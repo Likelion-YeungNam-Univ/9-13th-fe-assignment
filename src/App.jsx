@@ -22,8 +22,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout/>}>
           <Route index element={<Home/>}/>
-        </Route>
-        <Route>
           <Route path="/projects/:projectId" element={<ProjectList/>}/>
           <Route path="/about" element={<Intro/>}/>
           <Route path="/projects" element={<Project/>}/>
