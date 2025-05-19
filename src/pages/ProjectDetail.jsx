@@ -6,10 +6,25 @@ const ProjectDetail = () => {
   const { projectId } = useParams();
   const project = projects.find((m) => m.projectId === parseInt(projectId));
   const navigate = useNavigate();
+  const toHome = () => navigate("/");
   const toBack = () => navigate(-1);
 
   if (!project) {
-    return <div>해당 프로젝트 정보를 찾을 수 없습니다.</div>;
+    return (
+      <div>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-blue-50 text-center px-4">
+          <h2 className="text-2xl font-semibold text-gray-600 mb-2">
+            해당 프로젝트 정보를 찾을 수 없습니다.
+          </h2>
+          <button
+            onClick={toHome}
+            className="mt-5 px-6 py-3 bg-blue-950 hover:bg-white hover:text-blue-950 text-white rounded-xl shadow-md transition cursor-pointer font-bold"
+          >
+            홈으로 돌아가기
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -37,7 +52,6 @@ const ProjectDetail = () => {
               <img
                 key={key}
                 src={img}
-                alt={`${project.title}-${key + 1}`}
                 className="w-lg h-lg object-cover rounded-md shadow-md"
               />
             ))}
