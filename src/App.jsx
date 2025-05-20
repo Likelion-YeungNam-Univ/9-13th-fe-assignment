@@ -1,5 +1,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail";
+import about from "./pages/about";
+import NotFound from "./pages/NotFound";
+import Layout from "./components/Layout";
 
 function App() {
   return (
@@ -13,8 +18,12 @@ function App() {
     // + 중첩 라우팅 활용해서 구현해주세요.
     // 멋사 노션 페이지의 조건 사항 꼭 확인해주시고 다 만족시켜서 과제 해주세요.
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home/>}/>
+      <Routes path="/" element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Projects/:ProjectId" element={<ProjectDetail />} />
+        <Route path="/about" element={<about />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
