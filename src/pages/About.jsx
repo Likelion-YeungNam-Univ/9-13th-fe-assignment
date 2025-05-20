@@ -1,13 +1,16 @@
 import React from "react";
 import profile from "../assets/profile2.png";
 
-const insta =
+const instaIcon =
   "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg";
 
-const soundcloud =
+const soundcloudIcon =
   "https://www.vectorlogo.zone/logos/soundcloud/soundcloud-tile.svg";
 
-const InfoRow = ({ label, value }) => (
+const githubIcon =
+  "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg";
+
+const InfoTable = ({ label, value }) => (
   <div className="flex border-b border-gray-300">
     <div className="flex w-22 items-center justify-center bg-black text-white font-semibold px-4 py-2 border-r border-gray-300 text-sm">
       {label}
@@ -21,16 +24,15 @@ const About = () => {
     <div className="h-screen flex justify-center items-center">
       <img
         src={profile}
-        className="flex items-center justify-center w-75 h-104"
+        className="flex items-center justify-center w-75 h-104 blur-xs"
       />
       <div className="border border-gray-300 rounded overflow-hidden">
-        <InfoRow label="이름" value="홍진성" />
-        <InfoRow label="출생" value="2002년 1월 10일" />
-        <InfoRow label="출생지" value="경상북도 포항시" />
-        <InfoRow label="국적" value="🇰🇷 대한민국" />
-        <InfoRow label="신체" value="173cm | 70kg | O형" />
-        <InfoRow label="가족" value="아버지 어머니 여동생" />
-        <InfoRow
+        <InfoTable label="이름" value="홍진성" />
+        <InfoTable label="출생" value="2002년 1월 10일" />
+        <InfoTable label="출생지" value="경상북도 포항시" />
+        <InfoTable label="신체" value="173cm | 70kg | O형" />
+        <InfoTable label="가족" value="아버지 어머니 여동생" />
+        <InfoTable
           label="학력"
           value={
             <div className="flex flex-col space-y-1">
@@ -40,9 +42,10 @@ const About = () => {
             </div>
           }
         />
-        <InfoRow label="취미" value="농구, 헬스, 음악" />
-        <InfoRow label="MBTI" value="INFJ" />
-        <InfoRow
+        <InfoTable label="소속" value="YU 멋쟁이사자처럼 13기 FE" />
+        <InfoTable label="취미" value="농구, 헬스, 음악, 디저트" />
+        <InfoTable label="MBTI" value="INFJ" />
+        <InfoTable
           label="링크"
           value={
             <div className="flex space-x-3">
@@ -51,14 +54,21 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={insta} className="h-5 w-5" />
+                <img src={instaIcon} className="h-5 w-5" />
               </a>
               <a
                 href="https://soundcloud.com/newbadloo"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={soundcloud} className="h-5 w-5" />
+                <img src={soundcloudIcon} className="h-5 w-5" />
+              </a>
+              <a
+                href="https://github.com/gyeongsangseaman"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={githubIcon} className="h-5 w-5" />
               </a>
             </div>
           }
