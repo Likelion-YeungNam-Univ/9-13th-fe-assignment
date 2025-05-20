@@ -2,10 +2,12 @@ import React from 'react'
 
 const Intro = () => {
   return (
-    <div className="flex justify-center items-start min-h-screen bg-gray-50 w-full">
-      <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-2xl mt-16">
-        <ul className="pb-6 mb-4 text-2xl border-b ">
+    <div className="flex justify-center items-start overflow-y-auto bg-white-50 w-full">
+      <div className="bg-yellow-50 rounded-xl border shadow-lg p-8 w-full max-w-2xl mt-10">
+        <ul className="pb-6 mb-4 text-xl border-b ">
           <li className="pb-5"><strong>이름:</strong> 김정운</li>
+          <li className="pb-5 flex items-center"> <strong>학과: </strong> 통계학과 & 컴퓨터공학부 소프트웨어융합전공 
+          </li>
           <li className="pb-5"><strong>이메일:</strong> 0911kjw@yu.ac.kr</li>
           <li className="pb-5"><strong>MBTI:</strong> ENFJ</li>
           <li className="pb-5 flex items-center">
@@ -36,7 +38,7 @@ const Intro = () => {
           <li>배낭 여행 (국토 종주) 🚶‍♂️</li>
           <li>Fomula 1 시청 📺</li>
           <li>운동(러닝, 구기 종목, 헬스)🏃‍♂️</li>
-          <li>독서 📖 (Malcom Gladwell 저서, Upstream 읽는중..)</li>
+          <li>독서 📖</li>
         </ul>
 
         <h2 className="text-lg font-bold mb-2">🔎관심사🔎</h2>
@@ -49,10 +51,11 @@ const Intro = () => {
         <h2 className="text-lg font-bold mb-2">🎧음악🎧</h2>
         <p className="mb-1 text-sm">(장르를 가리진 않아서 이것저것…)</p>
         <ul className="list-disc list-inside">
+      
+          <li>Rose - Messy</li>
           <li>Sum41 - In Too Deep</li>
           <li>Sade - Smooth Operator</li>
           <li>Halsey - Ego</li>
-          <li>Rose - Messy</li>
         </ul>
       </div>
     </div>

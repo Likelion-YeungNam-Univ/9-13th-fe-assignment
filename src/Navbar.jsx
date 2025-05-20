@@ -6,7 +6,7 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="p-4 bg-gray-100 flex justify-between items-center">
+    <nav className="p-4 bg-gray-100 flex justify-between items-center shadow-md h-15">
       <div>
         <Link to="/" className="p-3 m-1 bg-gray-200 hover:bg-gray-300 text-black font-medium rounded-full">
           🏚  
