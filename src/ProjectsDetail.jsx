@@ -13,12 +13,12 @@ const ProjectsDetail = () => {
         <div className="p-4 text-red-500 text-2xl">
           해당 프로젝트 정보를 찾을 수 없습니다.
         </div>
-        <div
+        <button
           onClick={() => navigate("/projects")}
           className="px-6 py-3 bg-gray-200 border hover:bg-yellow-200 font-medium rounded-xl"
         >
           돌아가기
-        </div>
+        </button>
       </div>
     );
   }
@@ -35,12 +35,12 @@ const ProjectsDetail = () => {
         >
           github
         </a>
-        <div
+        <button
           onClick={() => navigate("/projects")}
           className="bg-gray-200 border rounded-xl px-2 py-1 hover:bg-yellow-200"
         >
           목록으로
-        </div>
+        </button>
       </div>
       <div className="text-xl p-4">과제 설명: {project.description}</div>
       <img src={project.thumbnail} className="mb-4" />
