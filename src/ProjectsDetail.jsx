@@ -9,8 +9,16 @@ const ProjectsDetail = () => {
 
   if (!project) {
     return (
-      <div className="p-4 text-red-500">
-        해당 프로젝트 정보를 찾을 수 없습니다.
+      <div className="h-screen flex flex-col justify-center items-center">
+        <div className="p-4 text-red-500 text-2xl">
+          해당 프로젝트 정보를 찾을 수 없습니다.
+        </div>
+        <div
+          onClick={() => navigate("/projects")}
+          className="px-6 py-3 bg-gray-200 border hover:bg-yellow-200 font-medium rounded-xl"
+        >
+          돌아가기
+        </div>
       </div>
     );
   }
