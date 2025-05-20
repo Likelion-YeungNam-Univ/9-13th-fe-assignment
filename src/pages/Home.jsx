@@ -2,9 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const nevigate = useNavigate();
-  const toProjects = () => nevigate("/projects");
-  const toAbout = () => nevigate("/about");
+  const navigate = useNavigate();
+  const toProjects = () => navigate("/projects");
+  const toAbout = () => navigate("/about");
 
   const btnStyle =
     "bg-blue-950 text-gray-200 rounded-2xl px-5 py-2 font-bold hover:bg-yellow-900 cursor-pointer";
