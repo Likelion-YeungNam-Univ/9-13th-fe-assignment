@@ -24,7 +24,7 @@ const About = () => {
     <div className="h-screen flex justify-center items-center">
       <img
         src={profile}
-        className="flex items-center justify-center w-75 h-104 blur-xs"
+        className="flex items-center justify-center w-75 h-104"
       />
       <div className="border border-gray-300 rounded overflow-hidden">
         <InfoTable label="이름" value="홍진성" />
